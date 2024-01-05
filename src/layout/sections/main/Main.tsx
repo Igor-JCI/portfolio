@@ -53,6 +53,7 @@ const PhotoWrapper = styled.div`
       left: 20px;
     }
   }
+  
 `
 const Photo = styled.img`
   width: 350px;
