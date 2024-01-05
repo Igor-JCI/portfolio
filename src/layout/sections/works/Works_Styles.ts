@@ -1,34 +1,17 @@
-import React from 'react';
 import styled from "styled-components";
-import {Link} from "../../../../components/Link";
-import {theme} from "../../../../styles/Theme";
-import {Button} from "../../../../components/Button";
+import {FlexWrapper} from "../../../components/FlexWrapper";
+import {theme} from "../../../styles/Theme";
+import {Link} from "../../../components/Link";
+import {Button} from "../../../components/Button";
 
-type WorksPropsType = {
-    title: string,
-    text: string,
-    src: string
-}
+const Works = styled.section`
+  position: relative;
 
-export const Work = (props: WorksPropsType) => {
-    return (
-        <StyledWork>
-            <ImageWrapper>
-                <Image src={props.src}/>
-                <Button>VIEW PROJECT</Button>
-            </ImageWrapper>
-
-            <Description>
-                <Title>{props.title}</Title>
-                <Text>{props.text}</Text>
-                <Link href={"#"}>demo</Link>
-                <Link href={"#"}>code</Link>
-            </Description>
-        </StyledWork>
-    );
-};
-
-const StyledWork = styled.div`
+  ${FlexWrapper} {
+    gap: 30px;
+  }
+`
+const Work = styled.div`
   background-color: ${theme.colors.secondarybg};
   width: 330px;
   flex-grow: 1;
@@ -93,7 +76,6 @@ const ImageWrapper = styled.div`
     }
   }
 `
-
 const Image = styled.img`
   width: 100%;
   height: 260px;
@@ -108,3 +90,7 @@ const Text = styled.p`
 const Description = styled.div`
   padding: 25px 20px;
 `
+
+export const S = {
+    Works, Work, ImageWrapper, Image, Title, Text, Description
+}
