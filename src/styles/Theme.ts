@@ -12,6 +12,8 @@ export const theme = {
         tablet: "screen and (max-width:768px)",
         mobile: "screen and (max-width:576px)",
         desktop: "screen and (min-width:1140px)"
+    },
+    animations: {
+        transition: ".2s ease-in-out"
     }
-
 }

@@ -4,10 +4,22 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {S} from "./Footer_Styles"
 
 const SocialItemsData = [
-    {iconId: "instagram"},
-    {iconId: "telegram"},
-    {iconId: "vk"},
-    {iconId: "in"}
+    {
+        iconId: "gitHub",
+        viewBox: "0 0 35 35"
+    },
+    {
+        iconId: "telegram",
+        viewBox: "0 0 35 35"
+    },
+    {
+        iconId: "whatsapp",
+        viewBox: "0 0 30 30"
+    },
+    {
+        iconId: "in",
+        viewBox: "0 0 35 35"
+    }
 ]
 
 
@@ -21,7 +33,7 @@ export const Footer: React.FC = () => {
                         SocialItemsData.map((s, index) => {
                             return <S.SocialItem key={index}>
                                 <S.SocialLink>
-                                    <Icon height={"21px"} width={"21px"} viewBox={"0 0 21 21"} iconId={s.iconId}/>
+                                    <Icon height={"21"} width={"21"} viewBox={s.viewBox} iconId={s.iconId}/>
                                 </S.SocialLink>
                             </S.SocialItem>
                         })

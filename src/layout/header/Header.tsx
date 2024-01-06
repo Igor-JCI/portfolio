@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
-import {Logo} from "../../components/logo/logo";
+import {Logo} from "../../components/logo/Logo";
 import {Container} from "./../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";

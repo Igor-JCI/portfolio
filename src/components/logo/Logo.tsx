@@ -6,7 +6,7 @@ import {animateScroll as scroll} from "react-scroll";
 export const Logo: React.FC = () => {
     return (
         <a onClick={()=>{scroll.scrollToTop()}}>
-            <Icon iconId={"code"}/>
+            <Icon iconId={"mainLogo"}/>
         </a>
     );
 };
