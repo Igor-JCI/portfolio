@@ -6,11 +6,11 @@ import {S} from "./Footer_Styles"
 const SocialItemsData = [
     {
         iconId: "gitHub",
-        viewBox: "0 0 35 35"
+        viewBox: "0 0 38 38"
     },
     {
         iconId: "telegram",
-        viewBox: "0 0 35 35"
+        viewBox: "8 7 20 20"
     },
     {
         iconId: "whatsapp",
@@ -18,7 +18,7 @@ const SocialItemsData = [
     },
     {
         iconId: "in",
-        viewBox: "0 0 35 35"
+        viewBox: "8 7 19 22"
     }
 ]
 
