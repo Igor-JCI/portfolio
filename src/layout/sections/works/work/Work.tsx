@@ -6,7 +6,9 @@ import {S} from "../Works_Styles"
 type WorksPropsType = {
     title: string,
     text: string,
-    src: string
+    src: string,
+    gitCode: string,
+    demoUrl: string
 }
 
 export const Work: React.FC<WorksPropsType> = (props) => {
@@ -14,14 +16,16 @@ export const Work: React.FC<WorksPropsType> = (props) => {
         <S.Work>
             <S.ImageWrapper>
                 <S.Image src={props.src}/>
-                <Button>VIEW PROJECT</Button>
+                <Button>
+                    <Link href={props.demoUrl}>VIEW PROJECT</Link>
+                </Button>
             </S.ImageWrapper>
 
             <S.Description>
                 <S.Title>{props.title}</S.Title>
                 <S.Text>{props.text}</S.Text>
-                <Link active href={"#"}>demo</Link>
-                <Link href={"#"}>code</Link>
+                <Link active href={props.demoUrl}>demo</Link>
+                <Link href={props.gitCode}>code</Link>
             </S.Description>
         </S.Work>
     );

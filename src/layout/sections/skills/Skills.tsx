@@ -10,37 +10,37 @@ const skillData = [
     {
         iconId: "code",
         title: "HTML5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+        description: "",
         viewBox: '0 0 50 50'
     },
     {
         iconId: "css",
         title: "CSS3",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+        description: "",
         viewBox: '0 0 43 40'
     },
     {
         iconId: "react",
         title: "React",
-        description: "I can  develop general purpose applications with React",
+        description: "",
         viewBox: '0 0 45 41'
     },
     {
         iconId: "typesScript",
         title: "TypesScript",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+        description: "",
         viewBox: '0 0 41 43'
     },
     {
         iconId: "redux",
         title: "Redux/Redux Toolkit",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+        description: "",
         viewBox: '0 0 110 110'
     },
     {
         iconId: "git",
         title: "VERSION CONTROL",
-        description: "I can use version control systems well, and Git are my go-to tool.",
+        description: "",
         viewBox: '0 0 110 110'
     },
 ]

@@ -16,38 +16,50 @@ const tabsItems: Array<{ title: string, status: TabsStatusType }> = [
         status: "all"
     },
     {
-        title: "LANDING PAGE",
-        status: "landing"
+        title: "ToDoList",
+        status: "ToDoList"
     },
     {
-        title: "REACT",
-        status: "react"
+        title: "Social Media",
+        status: "SocialNetwork"
     },
-    {
+    /*{
         title: "SPA",
         status: "spa"
-    }
+    }*/
 ]
 const worksData = [
     {
-        title: "Social Network",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
-        src: socialImg,
-        type: "spa",
-        id: 1
-    },
-    {
-        title: "Timer",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
+        title: "ToDoList",
+        text: "Following values to test the application:\n" +
+            "\n" +
+            "EMAIL: 7.jciab.7@gmail.com\n" +
+            "\n" +
+            "PASSWORD: 111",
         src: timerImg,
-        type: "react",
-        id: 2
+        type: "ToDoList",
+        id: 1,
+        gitCode: "https://github.com/Igor-JCI/todolist",
+        demoUrl: "https://igor-jci.github.io/todolist/"
     },
     {
         title: "Social Network",
+        text: "Following values to test the application:\n" +
+            "\n" +
+            "EMAIL: 7.jciab.7@gmail.com\n" +
+            "\n" +
+            "PASSWORD: 111",
+        src: socialImg,
+        type: "SocialNetwork",
+        id: 2,
+        gitCode: "https://github.com/Igor-JCI/social-network",
+        demoUrl: "https://igor-jci.github.io/social-network/"
+    },
+    /*{
+        title: "Social Media",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim",
         src: socialImg,
-        type: "spa",
+        type: "SocialNetwork",
         id: 3
     },
     {
@@ -70,7 +82,7 @@ const worksData = [
         src: timerImg,
         type: "react",
         id: 6
-    },
+    },*/
 ]
 
 
@@ -78,11 +90,11 @@ export const Works: React.FC = () => {
     const [currentFilterStatus, setCurrentFilterStatus] = useState<TabsStatusType>("all")
     let filteredWorks = worksData
 
-    if (currentFilterStatus === "landing") {
-        filteredWorks = worksData.filter(work => work.type === "landing")
+    if (currentFilterStatus === "ToDoList") {
+        filteredWorks = worksData.filter(work => work.type === "ToDoList")
     }
-    if (currentFilterStatus === "react") {
-        filteredWorks = worksData.filter(work => work.type === "react")
+    if (currentFilterStatus === "SocialNetwork") {
+        filteredWorks = worksData.filter(work => work.type === "SocialNetwork")
     }
     if (currentFilterStatus === "spa") {
         filteredWorks = worksData.filter(work => work.type === "spa")
@@ -117,7 +129,8 @@ export const Works: React.FC = () => {
                                                 exit={{opacity: 0}}
                                                 key={w.id}
                                     >
-                                        <Work key={w.id} title={w.title} text={w.text} src={w.src}/>
+                                        <Work key={w.id} demoUrl={w.demoUrl} gitCode={w.gitCode} title={w.title}
+                                              text={w.text} src={w.src}/>
                                     </motion.div>
                                 )
                             })

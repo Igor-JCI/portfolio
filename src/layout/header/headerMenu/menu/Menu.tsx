@@ -5,7 +5,7 @@ const items = [
     {title: "Home", href: "home"},
     {title: "Skills", href: "skills"},
     {title: "Works", href: "works"},
-    {title: "Testimony", href: "testimony"},
+    /*{title: "Testimony", href: "testimony"},*/
     {title: "Contact", href: "contact"}
 ]
 
