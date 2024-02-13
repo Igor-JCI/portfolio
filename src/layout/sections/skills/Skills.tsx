@@ -27,7 +27,7 @@ const skillData = [
     },
     {
         iconId: "typesScript",
-        title: "TypesScript",
+        title: "TypeScript",
         description: "",
         viewBox: '0 0 41 43'
     },
